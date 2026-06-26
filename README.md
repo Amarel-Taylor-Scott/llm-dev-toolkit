@@ -25,7 +25,7 @@ These tools are produced by an **autonomous research → implement → publish l
 | [`multi-agent-debate-simulator`](https://github.com/Amarel-Taylor-Scott/multi-agent-debate-simulator) | Simulates N agents with deterministic role policies passing messages in rounds until consensus o |
 | [`prompt-diff-linter`](https://github.com/Amarel-Taylor-Scott/prompt-diff-linter) | A small tool that compares two prompt template files, lists added/removed placeholders, detects  |
 | [`prompt-lint`](https://github.com/Amarel-Taylor-Scott/prompt-lint) | Lint prompt templates: detect unfilled {slots}, unbalanced braces, injection-risky phrases, and  · _improved ×1_ |
-| [`prompt-template-linter`](https://github.com/Amarel-Taylor-Scott/prompt-template-linter) | Parses a system prompt template string, finds {{placeholder}} patterns, counts instructions (lin |
+| [`prompt-template-linter`](https://github.com/Amarel-Taylor-Scott/prompt-template-linter) | Parses a system prompt template string, finds {{placeholder}} patterns, counts instructions (lin · _improved ×1_ |
 | [`rag-chunk-ranker`](https://github.com/Amarel-Taylor-Scott/rag-chunk-ranker) | Given a query string and a list of text chunks, compute BM25-like relevance scores using only co · _improved ×1_ |
 | [`rag-chunk-scorer`](https://github.com/Amarel-Taylor-Scott/rag-chunk-scorer) | Simulate a RAG retriever without a model: chunk documents using fixed-size, paragraph, and sente |
 | [`token-budget-guard`](https://github.com/Amarel-Taylor-Scott/token-budget-guard) | A stdlib-only CLI that reads a prompt file and a model config JSON (max_tokens, price_per_1k, co · _improved ×1_ |
