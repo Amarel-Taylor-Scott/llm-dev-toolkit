@@ -10,7 +10,7 @@ These tools are produced by an **autonomous research → implement → publish l
 
 | Tool | What it does |
 |---|---|
-| [`agent-trace-scorer`](https://github.com/Amarel-Taylor-Scott/agent-trace-scorer) | Reads JSONL agent traces where each line has {step, tool, input, output, status, answer} |
+| [`agent-trace-scorer`](https://github.com/Amarel-Taylor-Scott/agent-trace-scorer) | Reads JSONL agent traces where each line has {step, tool, input, output, status, answer} · _improved ×1_ |
 | [`capability-manifest-validator`](https://github.com/Amarel-Taylor-Scott/capability-manifest-validator) | Validates a JSON agent skill manifest: required fields (name, version, skills with triggers), no |
 | [`llm-cost-calc`](https://github.com/Amarel-Taylor-Scott/llm-cost-calc) | Compute and compare LLM API costs from token counts across a built-in price table (per-model inp · _improved ×1_ |
 | [`model-footprint-estimator`](https://github.com/Amarel-Taylor-Scott/model-footprint-estimator) | Estimates GGUF file size and inference RAM from parameters, quantization bits, context length, a |
