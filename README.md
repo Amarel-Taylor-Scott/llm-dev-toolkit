@@ -2,7 +2,7 @@
 
 > A growing, MIT-licensed collection of small, **dependency-free Python** tools for building LLM & agent applications — the picks and shovels. Each is its own repo; this is the index.
 
-**12 LLM/agent tools** · **3 general utilities** · stdlib-only · MIT
+**13 LLM/agent tools** · **3 general utilities** · stdlib-only · MIT
 
 These tools are produced by an **autonomous research → implement → publish loop**: a radar scrapes the AI space for what's trending, a fleet of code models build and *verify* the tools, and a second model audits each one for gamed tests before it ships. This index rebuilds itself as new tools land.
 
@@ -11,6 +11,7 @@ These tools are produced by an **autonomous research → implement → publish l
 | Tool | What it does |
 |---|---|
 | [`agent-trace-scorer`](https://github.com/Amarel-Taylor-Scott/agent-trace-scorer) | Reads JSONL agent traces where each line has {step, tool, input, output, status, answer} · _improved ×1_ |
+| [`agent-trace-validator`](https://github.com/Amarel-Taylor-Scott/agent-trace-validator) | Parse a JSON agent trace (steps with tool calls, inputs, outputs, and durations), validate that  |
 | [`capability-manifest-validator`](https://github.com/Amarel-Taylor-Scott/capability-manifest-validator) | Validates a JSON agent skill manifest: required fields (name, version, skills with triggers), no |
 | [`llm-cost-calc`](https://github.com/Amarel-Taylor-Scott/llm-cost-calc) | Compute and compare LLM API costs from token counts across a built-in price table (per-model inp · _improved ×1_ |
 | [`model-footprint-estimator`](https://github.com/Amarel-Taylor-Scott/model-footprint-estimator) | Estimates GGUF file size and inference RAM from parameters, quantization bits, context length, a |
@@ -45,4 +46,4 @@ git clone https://github.com/Amarel-Taylor-Scott/<tool>.git
 
 Fully autonomously, with quality gates after DeepReinforce's Ornith-1.0 reward-hacking defense: deterministic re-verification of every build, a monitor that rejects tautological tests, and a cross-model judge veto. Nothing broken or self-gamed ships.
 
-<sub>Auto-generated from 15 published repositories · 2026-06-26</sub>
+<sub>Auto-generated from 16 published repositories · 2026-06-26</sub>
