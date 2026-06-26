@@ -18,7 +18,7 @@ These tools are produced by an **autonomous research → implement → publish l
 | [`prompt-lint`](https://github.com/Amarel-Taylor-Scott/prompt-lint) | Lint prompt templates: detect unfilled {slots}, unbalanced braces, injection-risky phrases, and  · _improved ×1_ |
 | [`prompt-template-linter`](https://github.com/Amarel-Taylor-Scott/prompt-template-linter) | Parses a system prompt template string, finds {{placeholder}} patterns, counts instructions (lin |
 | [`rag-chunk-ranker`](https://github.com/Amarel-Taylor-Scott/rag-chunk-ranker) | Given a query string and a list of text chunks, compute BM25-like relevance scores using only co |
-| [`token-budget-guard`](https://github.com/Amarel-Taylor-Scott/token-budget-guard) | A stdlib-only CLI that reads a prompt file and a model config JSON (max_tokens, price_per_1k, co |
+| [`token-budget-guard`](https://github.com/Amarel-Taylor-Scott/token-budget-guard) | A stdlib-only CLI that reads a prompt file and a model config JSON (max_tokens, price_per_1k, co · _improved ×1_ |
 | [`token-cost-estimator`](https://github.com/Amarel-Taylor-Scott/token-cost-estimator) | A stdlib-only CLI that reads a JSONL of request/response strings, estimates token counts using a |
 
 ## 🔧 General utilities
