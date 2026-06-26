@@ -1,0 +1,123 @@
+#!/usr/bin/env python3
+"""Generate the LLM Dev Toolkit index from the autopilot ledger.
+
+This suite is a living catalog: it reads which tools the autonomous loop has
+published and rebuilds README.md so the toolkit stays current as new tools ship.
+Re-run it any time (the autopilot also calls it after publishing a new tool).
+"""
+
+from __future__ import annotations
+
+import json
+import os
+import time
+
+HERE = os.path.dirname(os.path.abspath(__file__))
+ROOT = os.path.abspath(os.path.join(HERE, "..", ".."))
+LEDGER = os.path.join(ROOT, "dev_loop", "autopilot", "ledger.jsonl")
+OWNER = "Amarel-Taylor-Scott"
+
+# Keywords that mark a tool as part of the LLM/agent builder kit (vs general util).
+LLM_KW = ("llm", "prompt", "rag", "agent", "token", "model", "eval", "embedding",
+          "context", "chat", "inference", "capability", "schema", "trace", "cost")
+
+
+def load_published() -> list:
+    out = []
+    if os.path.exists(LEDGER):
+        for ln in open(LEDGER, encoding="utf-8"):
+            ln = ln.strip()
+            if not ln:
+                continue
+            r = json.loads(ln)
+            if r.get("status") == "published" and r.get("repo_url"):
+                out.append(r)
+    return out
+
+
+def is_llm_tool(r: dict) -> bool:
+    if r.get("origin") == "research-radar":
+        return True
+    blob = (r.get("slug", "") + " " + r.get("title", "") + " " +
+            r.get("description", "")).lower()
+    return any(k in blob for k in LLM_KW)
+
+
+def _row(r: dict) -> str:
+    desc = (r.get("description", "") or r.get("title", "")).split(".")[0][:96]
+    imp = f" · _improved ×{r['improvements']}_" if r.get("improvements") else ""
+    return f"| [`{r['slug']}`]({r['repo_url']}) | {desc}{imp} |"
+
+
+def render(pub: list) -> str:
+    llm = sorted([r for r in pub if is_llm_tool(r)], key=lambda r: r["slug"])
+    util = sorted([r for r in pub if not is_llm_tool(r)], key=lambda r: r["slug"])
+    n = len(pub)
+    out = []
+    out.append("# LLM Dev Toolkit")
+    out.append("")
+    out.append("> A growing, MIT-licensed collection of small, **dependency-free "
+               "Python** tools for building LLM & agent applications — the picks "
+               "and shovels. Each is its own repo; this is the index.")
+    out.append("")
+    out.append(f"**{len(llm)} LLM/agent tools** · **{len(util)} general "
+               f"utilities** · stdlib-only · MIT")
+    out.append("")
+    out.append("These tools are produced by an **autonomous research → implement "
+               "→ publish loop**: a radar scrapes the AI space for what's "
+               "trending, a fleet of code models build and *verify* the tools, "
+               "and a second model audits each one for gamed tests before it "
+               "ships. This index rebuilds itself as new tools land.")
+    out.append("")
+    out.append("## 🧰 LLM & agent tools")
+    out.append("")
+    out.append("| Tool | What it does |")
+    out.append("|---|---|")
+    out += [_row(r) for r in llm]
+    if util:
+        out.append("")
+        out.append("## 🔧 General utilities")
+        out.append("")
+        out.append("| Tool | What it does |")
+        out.append("|---|---|")
+        out += [_row(r) for r in util]
+    out.append("")
+    out.append("## Install")
+    out.append("")
+    out.append("Each tool is stdlib-only — clone and run, no dependencies:")
+    out.append("")
+    out.append("```bash")
+    out.append(f"git clone https://github.com/{OWNER}/<tool>.git")
+    out.append("```")
+    out.append("")
+    out.append("(PyPI releases are prepared — `pip install <tool>` once tokens "
+               "are wired.)")
+    out.append("")
+    out.append("## How this was built")
+    out.append("")
+    out.append("Fully autonomously, with quality gates after DeepReinforce's "
+               "Ornith-1.0 reward-hacking defense: deterministic re-verification "
+               "of every build, a monitor that rejects tautological tests, and a "
+               "cross-model judge veto. Nothing broken or self-gamed ships.")
+    out.append("")
+    out.append(dim_footer(n))
+    return "\n".join(out)
+
+
+def dim_footer(n: int) -> str:
+    return (f"<sub>Auto-generated from {n} published repositories · "
+            f"{time.strftime('%Y-%m-%d')}</sub>")
+
+
+def main() -> int:
+    pub = load_published()
+    readme = render(pub)
+    with open(os.path.join(HERE, "README.md"), "w", encoding="utf-8") as f:
+        f.write(readme + "\n")
+    print(f"wrote README.md — {len(pub)} tools "
+          f"({sum(1 for r in pub if is_llm_tool(r))} LLM/agent)")
+    return 0
+
+
+if __name__ == "__main__":
+    raise SystemExit(main())
