@@ -6,6 +6,13 @@
 
 These tools are produced by an **autonomous research → implement → publish loop**: a radar scrapes the AI space for what's trending, a fleet of code models build and *verify* the tools, and a second model audits each one for gamed tests before it ships. This index rebuilds itself as new tools land.
 
+## 🚩 Flagships
+
+| Project | What it does |
+|---|---|
+| [`hybrid-graph-mapper`](https://github.com/Amarel-Taylor-Scott/hybrid-graph-mapper) | Build a knowledge graph of code or documents by fusing deterministic parsing, NLP, and LLM disco |
+| [`contradiction-mapper`](https://github.com/Amarel-Taylor-Scott/contradiction-mapper) | LLM codegraph harness that reviews every function/file for contradictions (intent vs implementat |
+
 ## 🧰 LLM & agent tools
 
 | Tool | What it does |
