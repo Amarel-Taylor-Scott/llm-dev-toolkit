@@ -20,6 +20,11 @@ These tools are produced by an **autonomous research → implement → publish l
 | [`streamjson`](https://github.com/Amarel-Taylor-Scott/streamjson) | Incrementally parse partial / streaming JSON (LLM token streams, SSE) — best-effort object from  |
 | [`diffapply`](https://github.com/Amarel-Taylor-Scott/diffapply) | Robustly apply edits LLMs emit — unified diffs AND search/replace blocks — with fuzzy context ma |
 | [`ftprep`](https://github.com/Amarel-Taylor-Scott/ftprep) | Fine-tune / LoRA dataset prep for JSONL — convert between chat/instruction/completion, dedup, de |
+| [`toolschema`](https://github.com/Amarel-Taylor-Scott/toolschema) | Turn a Python function into an OpenAI/Anthropic tool (function-calling) JSON schema from its sig |
+| [`secretscan`](https://github.com/Amarel-Taylor-Scott/secretscan) | Detect & redact secrets + PII in text/files/diffs before they reach an LLM or a commit — entropy |
+| [`injectguard`](https://github.com/Amarel-Taylor-Scott/injectguard) | Heuristic prompt-injection / jailbreak detector for untrusted content (retrieved docs, tool outp |
+| [`promptcache`](https://github.com/Amarel-Taylor-Scott/promptcache) | File-backed cache for LLM responses — exact + near-duplicate (MinHash) prompt matching to skip p |
+| [`neardupe`](https://github.com/Amarel-Taylor-Scott/neardupe) | Find near-duplicate texts in a dataset (beyond exact dedup) via MinHash + LSH banding — dataset  |
 
 ## 🧰 LLM & agent tools
 

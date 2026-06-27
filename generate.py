@@ -53,6 +53,21 @@ FLAGSHIPS = [
     {"slug": "ftprep",
      "repo_url": f"https://github.com/{OWNER}/ftprep",
      "description": "Fine-tune / LoRA dataset prep for JSONL — convert between chat/instruction/completion, dedup, deterministic train/val/test split, validate, stats"},
+    {"slug": "toolschema",
+     "repo_url": f"https://github.com/{OWNER}/toolschema",
+     "description": "Turn a Python function into an OpenAI/Anthropic tool (function-calling) JSON schema from its signature + docstring, and dispatch validated tool calls back to it"},
+    {"slug": "secretscan",
+     "repo_url": f"https://github.com/{OWNER}/secretscan",
+     "description": "Detect & redact secrets + PII in text/files/diffs before they reach an LLM or a commit — entropy + Luhn gated to cut false positives"},
+    {"slug": "injectguard",
+     "repo_url": f"https://github.com/{OWNER}/injectguard",
+     "description": "Heuristic prompt-injection / jailbreak detector for untrusted content (retrieved docs, tool output) — categorized patterns, risk score, invisible-char stripping"},
+    {"slug": "promptcache",
+     "repo_url": f"https://github.com/{OWNER}/promptcache",
+     "description": "File-backed cache for LLM responses — exact + near-duplicate (MinHash) prompt matching to skip paying for repeat calls"},
+    {"slug": "neardupe",
+     "repo_url": f"https://github.com/{OWNER}/neardupe",
+     "description": "Find near-duplicate texts in a dataset (beyond exact dedup) via MinHash + LSH banding — dataset hygiene for training / RAG corpora"},
 ]
 
 
