@@ -12,6 +12,7 @@ These tools are produced by an **autonomous research → implement → publish l
 |---|---|
 | [`hybrid-graph-mapper`](https://github.com/Amarel-Taylor-Scott/hybrid-graph-mapper) | Build a knowledge graph of code or documents by fusing deterministic parsing, NLP, and LLM disco |
 | [`contradiction-mapper`](https://github.com/Amarel-Taylor-Scott/contradiction-mapper) | LLM codegraph harness that reviews every function/file for contradictions (intent vs implementat |
+| [`pyprefix`](https://github.com/Amarel-Taylor-Scott/pyprefix) | Typed, greppable Python names (py_class_/py_function_/py_method_/py_inst_) for deterministic sea |
 
 ## 🧰 LLM & agent tools
 
@@ -53,4 +54,4 @@ git clone https://github.com/Amarel-Taylor-Scott/<tool>.git
 
 Fully autonomously, with quality gates after DeepReinforce's Ornith-1.0 reward-hacking defense: deterministic re-verification of every build, a monitor that rejects tautological tests, and a cross-model judge veto. Nothing broken or self-gamed ships.
 
-<sub>Auto-generated from 16 published repositories · 2026-06-26</sub>
+<sub>Auto-generated from 16 published repositories · 2026-06-27</sub>

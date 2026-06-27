@@ -21,6 +21,19 @@ OWNER = "Amarel-Taylor-Scott"
 LLM_KW = ("llm", "prompt", "rag", "agent", "token", "model", "eval", "embedding",
           "context", "chat", "inference", "capability", "schema", "trace", "cost")
 
+# Hand-built flagships (not from the autopilot ledger) — larger systems.
+FLAGSHIPS = [
+    {"slug": "hybrid-graph-mapper",
+     "repo_url": f"https://github.com/{OWNER}/hybrid-graph-mapper",
+     "description": "Build a knowledge graph of code or documents by fusing deterministic parsing, NLP, and LLM discovery — provenance-aware, both-context edge scoring"},
+    {"slug": "contradiction-mapper",
+     "repo_url": f"https://github.com/{OWNER}/contradiction-mapper",
+     "description": "LLM codegraph harness that reviews every function/file for contradictions (intent vs implementation, cross-codebase conflicts) with chunking + second-model verify"},
+    {"slug": "pyprefix",
+     "repo_url": f"https://github.com/{OWNER}/pyprefix",
+     "description": "Typed, greppable Python names (py_class_/py_function_/py_method_/py_inst_) for deterministic search + code maps — checker + verified codemod + map"},
+]
+
 
 def load_published() -> list:
     out = []
@@ -68,6 +81,12 @@ def render(pub: list) -> str:
                "trending, a fleet of code models build and *verify* the tools, "
                "and a second model audits each one for gamed tests before it "
                "ships. This index rebuilds itself as new tools land.")
+    out.append("")
+    out.append("## 🚩 Flagships")
+    out.append("")
+    out.append("| Project | What it does |")
+    out.append("|---|---|")
+    out += [_row(r) for r in FLAGSHIPS]
     out.append("")
     out.append("## 🧰 LLM & agent tools")
     out.append("")
