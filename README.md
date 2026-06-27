@@ -43,7 +43,8 @@ Larger ML systems for honest modeling under distribution shift — the one place
 | Project | What it does |
 |---|---|
 | [`shiftblend`](https://github.com/Amarel-Taylor-Scott/shiftblend) | Honest model exploration under covariate shift — score recipes by transferable skill (not in-sam |
-| [`waveweight`](https://github.com/Amarel-Taylor-Scott/waveweight) | Search periodic sample-weight patterns (sine/comb/…) that lift out-of-period transfer for time-o |
+| [`waveweight`](https://github.com/Amarel-Taylor-Scott/waveweight) | Discover sample-weight schemes (index patterns + data-driven local-window drivers × curves) that |
+| [`stablefit`](https://github.com/Amarel-Taylor-Scott/stablefit) | Jointly learn sample + feature weights to minimize the train-CV gap (stability / anti-overfit) — |
 
 ## 🧰 LLM & agent tools
 

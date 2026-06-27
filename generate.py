@@ -107,7 +107,10 @@ ML_FLAGSHIPS = [
      "description": "Honest model exploration under covariate shift — score recipes by transferable skill (not in-sample fit), test where each helps, blend members Markowitz-style"},
     {"slug": "waveweight",
      "repo_url": f"https://github.com/{OWNER}/waveweight",
-     "description": "Search periodic sample-weight patterns (sine/comb/…) that lift out-of-period transfer for time-ordered ML; bootstrap to robust per-record weights"},
+     "description": "Discover sample-weight schemes (index patterns + data-driven local-window drivers × curves) that lift out-of-period transfer — held-out + null validated"},
+    {"slug": "stablefit",
+     "repo_url": f"https://github.com/{OWNER}/stablefit",
+     "description": "Jointly learn sample + feature weights to minimize the train-CV gap (stability / anti-overfit) — cross-fold coefficient stability + local consensus, held-out + null validated"},
 ]
 
 
