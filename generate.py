@@ -38,6 +38,12 @@ FLAGSHIPS = [
     {"slug": "docdense",
      "repo_url": f"https://github.com/{OWNER}/docdense",
      "description": "Intake doc websites → dense, chunked, LLM-ready text deterministically (stdlib): strip HTML boilerplate, densify, heading-aware chunk — 61-75% fewer tokens, no LLM spent on raw HTML"},
+    {"slug": "repoprompt",
+     "repo_url": f"https://github.com/{OWNER}/repoprompt",
+     "description": "Pack a code repo into one LLM-ready prompt — gitignore-aware, token-budgeted, file tree + fenced files, Python signatures-only map mode (the code sibling of docdense)"},
+    {"slug": "llmjson",
+     "repo_url": f"https://github.com/{OWNER}/llmjson",
+     "description": "Extract & repair JSON from messy LLM output — fenced blocks, trailing commas, single quotes, True/None, comments, truncated/streamed — deterministically, stdlib only"},
 ]
 
 
