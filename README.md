@@ -25,6 +25,11 @@ These tools are produced by an **autonomous research → implement → publish l
 | [`injectguard`](https://github.com/Amarel-Taylor-Scott/injectguard) | Heuristic prompt-injection / jailbreak detector for untrusted content (retrieved docs, tool outp |
 | [`promptcache`](https://github.com/Amarel-Taylor-Scott/promptcache) | File-backed cache for LLM responses — exact + near-duplicate (MinHash) prompt matching to skip p |
 | [`neardupe`](https://github.com/Amarel-Taylor-Scott/neardupe) | Find near-duplicate texts in a dataset (beyond exact dedup) via MinHash + LSH banding — dataset  |
+| [`bm25lite`](https://github.com/Amarel-Taylor-Scott/bm25lite) | Reusable, persistable Okapi BM25 lexical search index for RAG/retrieval — build, query, save/loa |
+| [`chunklib`](https://github.com/Amarel-Taylor-Scott/chunklib) | General token-aware chunker for text + code (AST-aware, never splits a function) + markdown — th |
+| [`mdextract`](https://github.com/Amarel-Taylor-Scott/mdextract) | Pull structured pieces out of LLM Markdown — code blocks by language, GFM tables as dicts, headi |
+| [`tagextract`](https://github.com/Amarel-Taylor-Scott/tagextract) | Tolerantly extract content from XML-ish tags LLMs emit (<answer>, <thinking>) — nested, unclosed |
+| [`textmetrics`](https://github.com/Amarel-Taylor-Scott/textmetrics) | Text-comparison metrics for evaluating LLM output — exact match, token-F1, BLEU, ROUGE-N/L, edit |
 
 ## 🧰 LLM & agent tools
 

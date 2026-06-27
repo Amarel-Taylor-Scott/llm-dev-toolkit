@@ -68,6 +68,21 @@ FLAGSHIPS = [
     {"slug": "neardupe",
      "repo_url": f"https://github.com/{OWNER}/neardupe",
      "description": "Find near-duplicate texts in a dataset (beyond exact dedup) via MinHash + LSH banding — dataset hygiene for training / RAG corpora"},
+    {"slug": "bm25lite",
+     "repo_url": f"https://github.com/{OWNER}/bm25lite",
+     "description": "Reusable, persistable Okapi BM25 lexical search index for RAG/retrieval — build, query, save/load, no dependencies"},
+    {"slug": "chunklib",
+     "repo_url": f"https://github.com/{OWNER}/chunklib",
+     "description": "General token-aware chunker for text + code (AST-aware, never splits a function) + markdown — the reusable chunking primitive for RAG"},
+    {"slug": "mdextract",
+     "repo_url": f"https://github.com/{OWNER}/mdextract",
+     "description": "Pull structured pieces out of LLM Markdown — code blocks by language, GFM tables as dicts, heading outline, lists, links, front-matter — no markdown lib"},
+    {"slug": "tagextract",
+     "repo_url": f"https://github.com/{OWNER}/tagextract",
+     "description": "Tolerantly extract content from XML-ish tags LLMs emit (<answer>, <thinking>) — nested, unclosed, attributes — without an XML parser"},
+    {"slug": "textmetrics",
+     "repo_url": f"https://github.com/{OWNER}/textmetrics",
+     "description": "Text-comparison metrics for evaluating LLM output — exact match, token-F1, BLEU, ROUGE-N/L, edit distance, WER/CER — no dependencies"},
 ]
 
 
