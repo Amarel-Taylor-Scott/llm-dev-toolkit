@@ -32,6 +32,9 @@ FLAGSHIPS = [
     {"slug": "pyprefix",
      "repo_url": f"https://github.com/{OWNER}/pyprefix",
      "description": "Typed, greppable Python names (py_class_/py_function_/py_method_/py_inst_) for deterministic search + code maps — checker + verified codemod + map"},
+    {"slug": "cot-contracts",
+     "repo_url": f"https://github.com/{OWNER}/cot-contracts",
+     "description": "Design-by-contract for reasoning: declare + ENFORCE the chain of thought a model must follow (steps/order/gates/tools), verify clause-by-clause with a cross-model judge, export conformant traces as LoRA data"},
 ]
 
 
