@@ -44,6 +44,15 @@ FLAGSHIPS = [
     {"slug": "llmjson",
      "repo_url": f"https://github.com/{OWNER}/llmjson",
      "description": "Extract & repair JSON from messy LLM output — fenced blocks, trailing commas, single quotes, True/None, comments, truncated/streamed — deterministically, stdlib only"},
+    {"slug": "streamjson",
+     "repo_url": f"https://github.com/{OWNER}/streamjson",
+     "description": "Incrementally parse partial / streaming JSON (LLM token streams, SSE) — best-effort object from incomplete JSON, and emit array items / OpenAI deltas as they complete"},
+    {"slug": "diffapply",
+     "repo_url": f"https://github.com/{OWNER}/diffapply",
+     "description": "Robustly apply edits LLMs emit — unified diffs AND search/replace blocks — with fuzzy context matching and a never-corrupt-on-failure guarantee"},
+    {"slug": "ftprep",
+     "repo_url": f"https://github.com/{OWNER}/ftprep",
+     "description": "Fine-tune / LoRA dataset prep for JSONL — convert between chat/instruction/completion, dedup, deterministic train/val/test split, validate, stats"},
 ]
 
 

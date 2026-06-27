@@ -17,6 +17,9 @@ These tools are produced by an **autonomous research → implement → publish l
 | [`docdense`](https://github.com/Amarel-Taylor-Scott/docdense) | Intake doc websites → dense, chunked, LLM-ready text deterministically (stdlib): strip HTML boil |
 | [`repoprompt`](https://github.com/Amarel-Taylor-Scott/repoprompt) | Pack a code repo into one LLM-ready prompt — gitignore-aware, token-budgeted, file tree + fenced |
 | [`llmjson`](https://github.com/Amarel-Taylor-Scott/llmjson) | Extract & repair JSON from messy LLM output — fenced blocks, trailing commas, single quotes, Tru |
+| [`streamjson`](https://github.com/Amarel-Taylor-Scott/streamjson) | Incrementally parse partial / streaming JSON (LLM token streams, SSE) — best-effort object from  |
+| [`diffapply`](https://github.com/Amarel-Taylor-Scott/diffapply) | Robustly apply edits LLMs emit — unified diffs AND search/replace blocks — with fuzzy context ma |
+| [`ftprep`](https://github.com/Amarel-Taylor-Scott/ftprep) | Fine-tune / LoRA dataset prep for JSONL — convert between chat/instruction/completion, dedup, de |
 
 ## 🧰 LLM & agent tools
 
