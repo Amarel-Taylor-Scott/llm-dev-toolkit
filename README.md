@@ -30,6 +30,20 @@ These tools are produced by an **autonomous research → implement → publish l
 | [`mdextract`](https://github.com/Amarel-Taylor-Scott/mdextract) | Pull structured pieces out of LLM Markdown — code blocks by language, GFM tables as dicts, headi |
 | [`tagextract`](https://github.com/Amarel-Taylor-Scott/tagextract) | Tolerantly extract content from XML-ish tags LLMs emit (<answer>, <thinking>) — nested, unclosed |
 | [`textmetrics`](https://github.com/Amarel-Taylor-Scott/textmetrics) | Text-comparison metrics for evaluating LLM output — exact match, token-F1, BLEU, ROUGE-N/L, edit |
+| [`prompttmpl`](https://github.com/Amarel-Taylor-Scott/prompttmpl) | Tiny dependency-free prompt template engine — placeholders+defaults, conditionals, loops, partia |
+| [`chatwindow`](https://github.com/Amarel-Taylor-Scott/chatwindow) | Token-aware trimming of chat history to fit a context window — keep system + recent turns, drop  |
+| [`chatconv`](https://github.com/Amarel-Taylor-Scott/chatconv) | Convert chat transcripts between OpenAI, Anthropic, ShareGPT, and Markdown formats |
+| [`ctxfit`](https://github.com/Amarel-Taylor-Scott/ctxfit) | Select which scored context items to put in a limited context window — greedy value-density or o |
+| [`fewshot`](https://github.com/Amarel-Taylor-Scott/fewshot) | Dynamically select the best few-shot examples for a prompt — similarity ranking + MMR diversity, |
+
+## 🤖 ML toolkit (numpy)
+
+Larger ML systems for honest modeling under distribution shift — the one place a dependency (numpy) is warranted.
+
+| Project | What it does |
+|---|---|
+| [`shiftblend`](https://github.com/Amarel-Taylor-Scott/shiftblend) | Honest model exploration under covariate shift — score recipes by transferable skill (not in-sam |
+| [`waveweight`](https://github.com/Amarel-Taylor-Scott/waveweight) | Search periodic sample-weight patterns (sine/comb/…) that lift out-of-period transfer for time-o |
 
 ## 🧰 LLM & agent tools
 

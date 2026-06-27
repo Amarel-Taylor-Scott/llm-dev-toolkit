@@ -83,6 +83,31 @@ FLAGSHIPS = [
     {"slug": "textmetrics",
      "repo_url": f"https://github.com/{OWNER}/textmetrics",
      "description": "Text-comparison metrics for evaluating LLM output — exact match, token-F1, BLEU, ROUGE-N/L, edit distance, WER/CER — no dependencies"},
+    {"slug": "prompttmpl",
+     "repo_url": f"https://github.com/{OWNER}/prompttmpl",
+     "description": "Tiny dependency-free prompt template engine — placeholders+defaults, conditionals, loops, partials, variable validation, file registry"},
+    {"slug": "chatwindow",
+     "repo_url": f"https://github.com/{OWNER}/chatwindow",
+     "description": "Token-aware trimming of chat history to fit a context window — keep system + recent turns, drop or summarize the middle"},
+    {"slug": "chatconv",
+     "repo_url": f"https://github.com/{OWNER}/chatconv",
+     "description": "Convert chat transcripts between OpenAI, Anthropic, ShareGPT, and Markdown formats"},
+    {"slug": "ctxfit",
+     "repo_url": f"https://github.com/{OWNER}/ctxfit",
+     "description": "Select which scored context items to put in a limited context window — greedy value-density or optimal 0/1 knapsack"},
+    {"slug": "fewshot",
+     "repo_url": f"https://github.com/{OWNER}/fewshot",
+     "description": "Dynamically select the best few-shot examples for a prompt — similarity ranking + MMR diversity, fit to count/token budget"},
+]
+
+# Larger ML systems that legitimately need numpy (not part of the stdlib kit).
+ML_FLAGSHIPS = [
+    {"slug": "shiftblend",
+     "repo_url": f"https://github.com/{OWNER}/shiftblend",
+     "description": "Honest model exploration under covariate shift — score recipes by transferable skill (not in-sample fit), test where each helps, blend members Markowitz-style"},
+    {"slug": "waveweight",
+     "repo_url": f"https://github.com/{OWNER}/waveweight",
+     "description": "Search periodic sample-weight patterns (sine/comb/…) that lift out-of-period transfer for time-ordered ML; bootstrap to robust per-record weights"},
 ]
 
 
@@ -138,6 +163,15 @@ def render(pub: list) -> str:
     out.append("| Project | What it does |")
     out.append("|---|---|")
     out += [_row(r) for r in FLAGSHIPS]
+    out.append("")
+    out.append("## 🤖 ML toolkit (numpy)")
+    out.append("")
+    out.append("Larger ML systems for honest modeling under distribution shift — "
+               "the one place a dependency (numpy) is warranted.")
+    out.append("")
+    out.append("| Project | What it does |")
+    out.append("|---|---|")
+    out += [_row(r) for r in ML_FLAGSHIPS]
     out.append("")
     out.append("## 🧰 LLM & agent tools")
     out.append("")
