@@ -14,6 +14,7 @@ These tools are produced by an **autonomous research → implement → publish l
 | [`contradiction-mapper`](https://github.com/Amarel-Taylor-Scott/contradiction-mapper) | LLM codegraph harness that reviews every function/file for contradictions (intent vs implementat |
 | [`pyprefix`](https://github.com/Amarel-Taylor-Scott/pyprefix) | Typed, greppable Python names (py_class_/py_function_/py_method_/py_inst_) for deterministic sea |
 | [`cot-contracts`](https://github.com/Amarel-Taylor-Scott/cot-contracts) | Design-by-contract for reasoning: declare + ENFORCE the chain of thought a model must follow (st |
+| [`docdense`](https://github.com/Amarel-Taylor-Scott/docdense) | Intake doc websites → dense, chunked, LLM-ready text deterministically (stdlib): strip HTML boil |
 
 ## 🧰 LLM & agent tools
 

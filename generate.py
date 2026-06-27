@@ -35,6 +35,9 @@ FLAGSHIPS = [
     {"slug": "cot-contracts",
      "repo_url": f"https://github.com/{OWNER}/cot-contracts",
      "description": "Design-by-contract for reasoning: declare + ENFORCE the chain of thought a model must follow (steps/order/gates/tools), verify clause-by-clause with a cross-model judge, export conformant traces as LoRA data"},
+    {"slug": "docdense",
+     "repo_url": f"https://github.com/{OWNER}/docdense",
+     "description": "Intake doc websites → dense, chunked, LLM-ready text deterministically (stdlib): strip HTML boilerplate, densify, heading-aware chunk — 61-75% fewer tokens, no LLM spent on raw HTML"},
 ]
 
 
