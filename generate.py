@@ -135,6 +135,12 @@ ML_FLAGSHIPS = [
     {"slug": "groupweight",
      "repo_url": f"https://github.com/{OWNER}/groupweight",
      "description": "Weight whole feature groups by cross-fold contribution to generalization — group-level shrinkage for tabular feature families; held-out + null validated"},
+    {"slug": "driftweight",
+     "repo_url": f"https://github.com/{OWNER}/driftweight",
+     "description": "Recency sample weighting for regime drift — select how strongly to favor recent rows on train only, then require held-out + permutation-null validation"},
+    {"slug": "weightfuse",
+     "repo_url": f"https://github.com/{OWNER}/weightfuse",
+     "description": "Fuse sample-weight signals such as recency and residual stability, then require the fused vector to beat uniform, best single signal, and a null"},
 ]
 
 

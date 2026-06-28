@@ -53,6 +53,8 @@ Larger ML systems for honest modeling under distribution shift — the one place
 | [`weightmap`](https://github.com/Amarel-Taylor-Scott/weightmap) | Learn a shallow interpretable map from row-driver features to sample weights, catching driver in |
 | [`shiftweight`](https://github.com/Amarel-Taylor-Scott/shiftweight) | Covariate-shift correction by adversarial validation — features-only propensities weight train r |
 | [`groupweight`](https://github.com/Amarel-Taylor-Scott/groupweight) | Weight whole feature groups by cross-fold contribution to generalization — group-level shrinkage |
+| [`driftweight`](https://github.com/Amarel-Taylor-Scott/driftweight) | Recency sample weighting for regime drift — select how strongly to favor recent rows on train on |
+| [`weightfuse`](https://github.com/Amarel-Taylor-Scott/weightfuse) | Fuse sample-weight signals such as recency and residual stability, then require the fused vector |
 
 ## 🧰 LLM & agent tools
 
