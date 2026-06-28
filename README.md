@@ -45,6 +45,14 @@ Larger ML systems for honest modeling under distribution shift — the one place
 | [`shiftblend`](https://github.com/Amarel-Taylor-Scott/shiftblend) | Honest model exploration under covariate shift — score recipes by transferable skill (not in-sam |
 | [`waveweight`](https://github.com/Amarel-Taylor-Scott/waveweight) | Discover sample-weight schemes (index patterns + data-driven local-window drivers × curves) that |
 | [`stablefit`](https://github.com/Amarel-Taylor-Scott/stablefit) | Jointly learn sample + feature weights to minimize the train-CV gap (stability / anti-overfit) — |
+| [`densityweight`](https://github.com/Amarel-Taylor-Scott/densityweight) | Downweight redundant dense regions so clustered near-duplicate rows do not dominate a fit — effe |
+| [`neighborweight`](https://github.com/Amarel-Taylor-Scott/neighborweight) | Weight samples from feature-space neighbor behavior — isolate outliers, local target disagreemen |
+| [`bootweight`](https://github.com/Amarel-Taylor-Scott/bootweight) | Per-sample weights from bootstrap out-of-bag stability — downweight rows with persistently large |
+| [`chunkweight`](https://github.com/Amarel-Taylor-Scott/chunkweight) | Weight samples by chunk behavior — contiguous/interleaved/cluster chunks scored by leave-chunk-o |
+| [`influenceweight`](https://github.com/Amarel-Taylor-Scott/influenceweight) | Closed-form ridge influence weighting — leverage, exact leave-one-out residual, and Cook's dista |
+| [`weightmap`](https://github.com/Amarel-Taylor-Scott/weightmap) | Learn a shallow interpretable map from row-driver features to sample weights, catching driver in |
+| [`shiftweight`](https://github.com/Amarel-Taylor-Scott/shiftweight) | Covariate-shift correction by adversarial validation — features-only propensities weight train r |
+| [`groupweight`](https://github.com/Amarel-Taylor-Scott/groupweight) | Weight whole feature groups by cross-fold contribution to generalization — group-level shrinkage |
 
 ## 🧰 LLM & agent tools
 
