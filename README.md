@@ -65,7 +65,7 @@ Larger ML systems for honest modeling under distribution shift — the one place
 | [`capability-manifest-validator`](https://github.com/Amarel-Taylor-Scott/capability-manifest-validator) | Validates a JSON agent skill manifest: required fields (name, version, skills with triggers), no |
 | [`llm-cost-calc`](https://github.com/Amarel-Taylor-Scott/llm-cost-calc) | Compute and compare LLM API costs from token counts across a built-in price table (per-model inp · _improved ×1_ |
 | [`model-footprint-estimator`](https://github.com/Amarel-Taylor-Scott/model-footprint-estimator) | Estimates GGUF file size and inference RAM from parameters, quantization bits, context length, a |
-| [`multi-agent-debate-simulator`](https://github.com/Amarel-Taylor-Scott/multi-agent-debate-simulator) | Simulates N agents with deterministic role policies passing messages in rounds until consensus o |
+| [`multi-agent-debate-simulator`](https://github.com/Amarel-Taylor-Scott/multi-agent-debate-simulator) | Simulates N agents with deterministic role policies passing messages in rounds until consensus o · _improved ×1_ |
 | [`prompt-diff-linter`](https://github.com/Amarel-Taylor-Scott/prompt-diff-linter) | A small tool that compares two prompt template files, lists added/removed placeholders, detects  |
 | [`prompt-lint`](https://github.com/Amarel-Taylor-Scott/prompt-lint) | Lint prompt templates: detect unfilled {slots}, unbalanced braces, injection-risky phrases, and  · _improved ×1_ |
 | [`prompt-template-linter`](https://github.com/Amarel-Taylor-Scott/prompt-template-linter) | Parses a system prompt template string, finds {{placeholder}} patterns, counts instructions (lin · _improved ×1_ |
@@ -96,4 +96,4 @@ git clone https://github.com/Amarel-Taylor-Scott/<tool>.git
 
 Fully autonomously, with quality gates after DeepReinforce's Ornith-1.0 reward-hacking defense: deterministic re-verification of every build, a monitor that rejects tautological tests, and a cross-model judge veto. Nothing broken or self-gamed ships.
 
-<sub>Auto-generated from 16 published repositories · 2026-06-27</sub>
+<sub>Auto-generated from 16 published repositories · 2026-07-09</sub>
