@@ -2,7 +2,7 @@
 
 > A growing, MIT-licensed collection of small, **dependency-free Python** tools for building LLM & agent applications — the picks and shovels. Each is its own repo; this is the index.
 
-**13 LLM/agent tools** · **7 agent-systems primitives + 3 numpy ML (new: Waves 7-9)** · **3 general utilities** · stdlib-only (+ numpy ML) · MIT
+**13 LLM/agent tools** · **7 agent-systems primitives + 4 numpy ML (new: Waves 7-10)** · **3 general utilities** · stdlib-only (+ numpy ML) · MIT
 
 These tools are produced by an **autonomous research → implement → publish loop**: a radar scrapes the AI space for what's trending, a fleet of code models build and *verify* the tools, and a second model audits each one for gamed tests before it ships. This index rebuilds itself as new tools land.
 
@@ -57,6 +57,7 @@ Larger ML systems for honest modeling under distribution shift — the one place
 | [`weightfuse`](https://github.com/Amarel-Taylor-Scott/weightfuse) | Fuse sample-weight signals such as recency and residual stability, then require the fused vector |
 | [`gapservo`](https://github.com/Amarel-Taylor-Scott/gapservo) | Gap-aware gradient descent — a live cross-validated generalization-gap instrument + a guarded CV-gap stopper that cuts overfitting in one online pass (~2× under real overfitting, neutral otherwise); held-out + null + true-negative controls _(new)_ |
 | [`deltamem`](https://github.com/Amarel-Taylor-Scott/deltamem) | Gated delta-rule fast-weight associative memory — the mechanism behind linear attention & BDH-style synaptic memory, with additive-Hebbian / delta / gated-delta rules and honest measurements of when each helps (single-pass Hebbian is competitive; delta wins on refinement + overwrite) _(new)_ |
+| [`bbstep`](https://github.com/Amarel-Taylor-Scott/bbstep) | Barzilai-Borwein adaptive step sizes for gradient descent — estimate inverse curvature for free from the last two iterates; ~9× faster than a fixed rate on ill-conditioned problems (beats line search, which doesn't fix conditioning), with safeguards whose failure mode is demonstrated deterministically _(new)_ |
 | [`indextune`](https://github.com/Amarel-Taylor-Scott/indextune) | Self-tune a semantic retrieval index — search (embedder × dimensionality × LSH bits/tables × metric) for the config that retrieves best on held-out queries within a candidate-cost budget; the self-tuning layer for semantic-linker, with a random-config control (tuned ~2× an untuned default, 10× fewer candidates) _(new)_ |
 
 ## 🧩 Agent systems & primitives
