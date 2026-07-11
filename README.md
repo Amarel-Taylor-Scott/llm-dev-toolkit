@@ -2,7 +2,7 @@
 
 > A growing, MIT-licensed collection of small, **dependency-free Python** tools for building LLM & agent applications — the picks and shovels. Each is its own repo; this is the index.
 
-**13 LLM/agent tools** · **10 agent-systems primitives + 9 numpy ML (new: Waves 7-18)** · **3 general utilities** · stdlib-only (+ numpy ML) · MIT
+**13 LLM/agent tools** · **1 composed system + 10 agent-systems primitives + 10 numpy ML (new: Waves 7-19)** · **3 general utilities** · stdlib-only (+ numpy ML) · MIT
 
 These tools are produced by an **autonomous research → implement → publish loop**: a radar scrapes the AI space for what's trending, a fleet of code models build and *verify* the tools, and a second model audits each one for gamed tests before it ships. This index rebuilds itself as new tools land.
 
@@ -35,6 +35,14 @@ These tools are produced by an **autonomous research → implement → publish l
 | [`chatconv`](https://github.com/Amarel-Taylor-Scott/chatconv) | Convert chat transcripts between OpenAI, Anthropic, ShareGPT, and Markdown formats |
 | [`ctxfit`](https://github.com/Amarel-Taylor-Scott/ctxfit) | Select which scored context items to put in a limited context window — greedy value-density or o |
 | [`fewshot`](https://github.com/Amarel-Taylor-Scott/fewshot) | Dynamically select the best few-shot examples for a prompt — similarity ranking + MMR diversity, |
+
+## 🔗 Composed systems
+
+Whole systems built *from* the primitives below — the picks-and-shovels composed into something larger than the sum of its parts.
+
+| Project | What it does |
+|---|---|
+| [`verdictkit`](https://github.com/Amarel-Taylor-Scott/verdictkit) | Turn an experiment into a defensible **ACCEPT / REJECT / INCONCLUSIVE** verdict — composes [`matchedfork`](https://github.com/Amarel-Taylor-Scott/matchedfork) (matched-sibling causal isolation) + [`evidencegate`](https://github.com/Amarel-Taylor-Scott/evidencegate) (anytime-valid significance, protected-metric noninferiority, portfolio FDR + no-double-spending) + [`backcheck`](https://github.com/Amarel-Taylor-Scott/backcheck) (held-out predictor override) into one verdict pipeline. A seed-confounded null fools the naive unmatched+peeked comparison (+1.223, "significant") but not verdictkit (−0.025, INCONCLUSIVE). 11/11 known-ground-truth controls, 17 tests, pure stdlib (primitives vendored → zero-install clone) _(new)_ |
 
 ## 🤖 ML toolkit (numpy)
 
