@@ -2,7 +2,7 @@
 
 > A growing, MIT-licensed collection of small, **dependency-free Python** tools for building LLM & agent applications — the picks and shovels. Each is its own repo; this is the index.
 
-**13 LLM/agent tools** · **3 general utilities** · stdlib-only · MIT
+**13 LLM/agent tools** · **6 agent-systems primitives (new)** · **3 general utilities** · stdlib-only (+ numpy ML) · MIT
 
 These tools are produced by an **autonomous research → implement → publish loop**: a radar scrapes the AI space for what's trending, a fleet of code models build and *verify* the tools, and a second model audits each one for gamed tests before it ships. This index rebuilds itself as new tools land.
 
@@ -55,6 +55,19 @@ Larger ML systems for honest modeling under distribution shift — the one place
 | [`groupweight`](https://github.com/Amarel-Taylor-Scott/groupweight) | Weight whole feature groups by cross-fold contribution to generalization — group-level shrinkage |
 | [`driftweight`](https://github.com/Amarel-Taylor-Scott/driftweight) | Recency sample weighting for regime drift — select how strongly to favor recent rows on train on |
 | [`weightfuse`](https://github.com/Amarel-Taylor-Scott/weightfuse) | Fuse sample-weight signals such as recency and residual stability, then require the fused vector |
+| [`gapservo`](https://github.com/Amarel-Taylor-Scott/gapservo) | Gap-aware gradient descent — a live cross-validated generalization-gap instrument + a guarded CV-gap stopper that cuts overfitting in one online pass (~2× under real overfitting, neutral otherwise); held-out + null + true-negative controls _(new)_ |
+
+## 🧩 Agent systems & primitives
+
+Sans-IO building blocks for agent/LLM systems — deterministic, dependency-free, and heavily property-tested. _(new this wave — pending push)_
+
+| Project | What it does |
+|---|---|
+| [`effectgen`](https://github.com/Amarel-Taylor-Scott/effectgen) | Algebraic effects via generators — write agent logic as pure generators that `yield` effect requests; handlers decide meaning (real IO, mocks, record, replay). Test agents with no APIs; reproduce bugs exactly. 72 tests |
+| [`agenttape`](https://github.com/Amarel-Taylor-Scott/agenttape) | A VCR + delta-debugger for tool-call loops — record calls to a tape, replay offline, localize the first divergence, and ddmin-minimize a 400-call failure to the 3 calls that reproduce it. 63 tests |
+| [`toolgate`](https://github.com/Amarel-Taylor-Scott/toolgate) | A capability firewall for tool calls — declarative allow/deny/confirm/dry-run/redact policy + budgets, and mutating calls wrapped in transactions with a policy-checked undo journal (plan-then-commit). 74 tests |
+| [`stepcache`](https://github.com/Amarel-Taylor-Scott/stepcache) | Content-addressed incremental recomputation — a Salsa-style runtime that hashes each pipeline step and reruns only the dirty cone, proving what was cached vs computed and why. 65 tests |
+| [`crdtext`](https://github.com/Amarel-Taylor-Scott/crdtext) | A convergent replicated text type (RGA CRDT) — N replicas edit concurrently, exchange ops in any order (delayed/duplicated), and provably converge. 100-scenario convergence proof. 32 tests |
 
 ## 🧰 LLM & agent tools
 
