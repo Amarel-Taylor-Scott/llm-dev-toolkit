@@ -2,7 +2,7 @@
 
 > A growing, MIT-licensed collection of small, **dependency-free Python** tools for building LLM & agent applications — the picks and shovels. Each is its own repo; this is the index.
 
-**13 LLM/agent tools** · **9 agent-systems primitives + 7 numpy ML (new: Waves 7-15)** · **3 general utilities** · stdlib-only (+ numpy ML) · MIT
+**13 LLM/agent tools** · **10 agent-systems primitives + 7 numpy ML (new: Waves 7-16)** · **3 general utilities** · stdlib-only (+ numpy ML) · MIT
 
 These tools are produced by an **autonomous research → implement → publish loop**: a radar scrapes the AI space for what's trending, a fleet of code models build and *verify* the tools, and a second model audits each one for gamed tests before it ships. This index rebuilds itself as new tools land.
 
@@ -78,6 +78,7 @@ Sans-IO building blocks for agent/LLM systems — deterministic, dependency-free
 | [`metamorph`](https://github.com/Amarel-Taylor-Scott/metamorph) | Metamorphic testing without an oracle — verify functions you can't write expected outputs for by stating how the output must CHANGE under an input transform (permutation-invariance, shift-equivariance); catches bugs example tests miss and shrinks counterexamples to minimal inputs. 21 tests |
 | [`evidencegate`](https://github.com/Amarel-Taylor-Scott/evidencegate) | The honest-validation doctrine as a library — an anytime-valid e-process (testing by betting) that lets you peek at evidence as often as you like without inflating the false-positive rate (0.024 vs a naive 0.317), plus a noninferiority gate, online FDR (LORD), and a no-double-spending audit ledger. 19 tests |
 | [`matchedfork`](https://github.com/Amarel-Taylor-Scott/matchedfork) | Reproducible causal testing for interventions — run treatment and control from an identical state + same seed (matched siblings) so X is the only difference; pairing cancels seed-borne confounds that fool a naive comparison (matched 0.00 vs unmatched 10.04). Plus sham, dose-response, knockout→rescue. 11 tests |
+| [`rrfuse`](https://github.com/Amarel-Taylor-Scott/rrfuse) | Combine ranked lists without trusting their score scales — Reciprocal Rank Fusion (scale-invariant), Pareto/nondominated fusion, calibrated fusion + Borda/CombSUM/CombMNZ and nDCG; rescaling a ranker ×1000 leaves RRF unchanged while naive score-averaging is fooled. 16 tests |
 
 ## 🧰 LLM & agent tools
 
